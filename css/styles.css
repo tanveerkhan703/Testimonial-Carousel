@@ -1,0 +1,122 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+/* swiper css */
+.swiper{
+  width: 950px;
+}
+section .card .image {
+  height: 140px;
+  width: 140px;
+  padding: 3px;
+  border-radius: 50%;
+  background: rgb(127, 193, 219);
+}
+section .card .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.card {
+  position: relative;
+  border-radius: 20px;
+  background: #fff;
+  margin: 20px 0px;
+  width: 280px;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background: rgb(127, 193, 219);
+  border-radius: 20px 20px 0px 0px;
+}
+.card .card-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  position: relative;
+  z-index: 100;
+}
+.card .media-ico {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .media-ico .svg-inline--fa {
+  color: #fff;
+  margin-top: 10px;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.card .media-ico .svg-inline--fa:hover {
+  opacity: 1;
+}
+.card .name-profession {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+  color: #333;
+}
+.name-profession .name {
+  font-size: 20px;
+  font-weight: 700;
+}
+.name-profession .profession {
+  font-size: 15px;
+  font-weight: 550;
+}
+.card .rating {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+.card .rating .svg-inline--fa {
+    font-size: 18px;
+    margin: 0 2px;
+    color: rgb(249, 249, 102);
+}
+.card .button{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.card .button button{
+    background:rgb(127, 193, 219);
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-size: 12px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.button button:active{
+    transform: scale(0.97);
+}
+.button button:hover{
+    background: rgb(69, 162, 199);
+}
+
+
